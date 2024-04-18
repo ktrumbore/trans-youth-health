@@ -17,12 +17,17 @@
     --egg: #FFF5F5;
 }
 
+body {
+    background-color:var(--egg); 
+}
+
 h1 {
     font-family: 'Calistoga', serif;
     color:var(--berry); 
-    font-size: 60px;
-    line-height:70px;
+    font-size: 55px;
+    line-height: 65px;
     letter-spacing:1px;
+    margin-bottom:56px;
 }
 
 h2 {
@@ -31,6 +36,8 @@ h2 {
     color:var(--wave); 
     font-size: 26px;
     line-height:30px;
+    text-transform:uppercase;
+    margin-bottom: 16px;
 }
 
 h3 {
@@ -45,6 +52,7 @@ p {
     color:var(--plum); 
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 16px;
 }
 
 a {
@@ -167,9 +175,10 @@ nav a:hover {
 
 .hero {
     position:relative;
-    height:100vh;
-    background-image: url(images/hero-butterfly.jpg);
+    height:145vh;
+    background-image: url(images/hero-mobile.jpg);
     background-size:cover;
+    margin-bottom:135px;
 }
 
 .hero-text {
@@ -179,7 +188,8 @@ nav a:hover {
 .hero h1 {
     color:var(--orange);
     margin-bottom:48px;
-    margin-top:100px;
+    margin-top:60px;
+    font-size:64px;
 }
 
 .hero h2 {
@@ -187,8 +197,79 @@ nav a:hover {
     margin-bottom:56px;
 }
 
+button.buttonalt {
+    background:var(--orange);
+    color:var(--berry);
+    margin-right:1.5em;
+}
 
+button.buttonalt:hover {
+    background: var(--wave);
+    border: solid var(--wave) 3px;
+    color:var(--egg);
+    transition-duration:.2s;
+}
 
+/*  Cards */
+
+.narrow-content {
+    margin-left:15%;
+    margin-right:15%;
+}
+
+.card-image {
+    margin-bottom:120px;
+}
+
+.card-image .text-column {
+    width:100%;
+    margin-right:2em;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+    border-radius:16px;
+    margin-top:32px;
+}
+
+.statistics {
+    margin: auto;
+    width: 50%;
+    margin-bottom:120px;
+}
+
+.stat-card {
+    text-align:center;
+    margin-bottom:56px;
+}
+
+.stat-card h1 {
+    color:var(--orange);
+    margin-bottom:12px;
+}
+
+.banner {
+    background-color:var(--plum);
+}
+
+.banner img {
+    border-radius:0;
+    margin-top:0;
+}
+
+.banner-text {
+    margin: 56px 4em 0 4em;
+    padding-bottom: 56px;
+}
+
+.banner-text h2 {
+    color:var(--pink);
+}
+
+.banner-text p {
+    color:var(--egg);
+}
 
 /* WELCOME TO DESKTOP */
 
@@ -216,6 +297,8 @@ nav a:hover {
       
     nav ul {
         display:flex;
+        margin-right:18em;
+        margin-left:2em;
     }
 
     nav li {
@@ -226,6 +309,49 @@ nav a:hover {
         opacity:1;
         position:relative;
     }
+
+    .hero {
+        background-image: url(images/hero-butterfly.jpg);
+        height:100vh;
+    }
     
+    .hero h1 {
+        margin-top:100px;
+    }
+    
+    .card-image {
+        display:flex;
+    }
+
+    img {
+        margin-top:0;
+    }
+
+    .statistics {
+        display:flex;
+        margin-left:10%;
+        margin-right:10%;
+        margin: 0 auto;
+        margin-bottom:80px;
+        width:80%;
+    }
+
+    .stat-card {
+        margin: 0 2.5em 2.5em 0;
+    }
+
+    .banner {
+        display:flex;
+    }
+
+    .banner img {
+        width: 50%;
+    }    
+
+    .banner-text {
+        margin-top:150px;
+        margin-right:8em;
+        margin-left:4em;
+    }
 
 }
