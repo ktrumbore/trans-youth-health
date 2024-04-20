@@ -45,6 +45,7 @@ h3 {
     color:var(--egg); 
     font-size: 44px;
     line-height:55px;
+    margin-bottom: 56px;
 }
 
 p {
@@ -210,7 +211,7 @@ button.buttonalt:hover {
     transition-duration:.2s;
 }
 
-/*  Cards */
+/*  Body Content */
 
 .narrow-content {
     margin-left:15%;
@@ -251,15 +252,17 @@ img {
 
 .banner {
     background-color:var(--plum);
+    margin-bottom:120px;
 }
 
 .banner img {
     border-radius:0;
     margin-top:0;
+    object-fit:cover;
 }
 
 .banner-text {
-    margin: 56px 4em 0 4em;
+    margin: 88px 4em 0 4em;
     padding-bottom: 56px;
 }
 
@@ -269,6 +272,67 @@ img {
 
 .banner-text p {
     color:var(--egg);
+    margin-bottom:2em;
+}
+
+.bullet-text {
+    display:flex;
+}
+
+.bullet-text img {
+    margin-right:2em;
+    height:300%;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+
+/* Healthcare Cards */
+
+.grid-item {
+    border-radius:16px;
+    background-color: var(--berry);
+    padding:4em;
+    margin-bottom:65px;
+}
+
+.left-column p {
+    margin-bottom:65px;
+}
+
+.grid-item p {
+    margin-bottom: 56px;
+}
+
+#pink {
+    color: var(--pink);
+}
+
+#pinkbg {
+    background-color: var(--pink);
+}
+
+#egg {
+    color: var(--egg);
+}
+
+#orangebg {
+    background-color: var(--orange);
+}
+
+#bluebg {
+    background-color: var(--wave);
+}
+
+#berry {
+    color: var(--berry);
+}
+
+#plum {
+    color: var(--plum);
+}
+
+#plumbg {
+    background-color: var(--plum);
 }
 
 /* WELCOME TO DESKTOP */
@@ -345,13 +409,33 @@ img {
     }
 
     .banner img {
-        width: 50%;
+        width: 55%;
     }    
 
     .banner-text {
-        margin-top:150px;
+        margin-top:140px;
         margin-right:8em;
         margin-left:4em;
+    }
+
+    .bullet-text img {
+        width:60px;
+        padding-top:1.5em;
+    }
+
+    .healthcare-grid {
+        display:inline-flex;
+        gap: 40px;
+        margin-left:11%;
+        margin-right:11%;
+    }
+
+    .left-column {
+        width:50%;
+    }
+
+    .right-column {
+        width:50%;
     }
 
 }
