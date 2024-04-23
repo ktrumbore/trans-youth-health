@@ -11,7 +11,7 @@
 :root {
     --berry: #96005A;
     --orange: #FAB37A;
-    --wave: #215E81;
+    --wave: #286C93;
     --pink: #FAC2C7;
     --plum: #481930;
     --egg: #FFF5F5;
@@ -43,9 +43,17 @@ h2 {
 h3 {
     font-family: 'Calistoga', serif;
     color:var(--egg); 
-    font-size: 44px;
-    line-height:55px;
+    font-size: 40px;
+    line-height: 50px;
     margin-bottom: 56px;
+}
+
+h4 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    color:var(--pink);
+    font-size:14px;
 }
 
 p {
@@ -80,8 +88,8 @@ button {
 }
   
 button:hover {
-    background: var(--wave);
-    border: solid var(--wave) 3px;
+    background: #499BBF;
+    border: solid #499BBF 3px;
     color:var(--egg);
     transition-duration:.2s;
 }
@@ -205,8 +213,8 @@ button.buttonalt {
 }
 
 button.buttonalt:hover {
-    background: var(--wave);
-    border: solid var(--wave) 3px;
+    background: #499BBF;
+    border: solid #499BBF 3px;
     color:var(--egg);
     transition-duration:.2s;
 }
@@ -288,10 +296,20 @@ img {
 
 /* Healthcare Cards */
 
+.healthcare-grid {
+    margin-left:12%;
+    margin-right:12%;
+}
+
 .grid-item {
     border-radius:16px;
     background-color: var(--berry);
     padding:4em;
+    margin-bottom:65px;
+    text-align:center;
+}
+
+.resources {
     margin-bottom:65px;
 }
 
@@ -301,6 +319,10 @@ img {
 
 .grid-item p {
     margin-bottom: 56px;
+}
+
+.resources p {
+    margin-bottom:16px;
 }
 
 #pink {
@@ -327,6 +349,15 @@ img {
     color: var(--berry);
 }
 
+#berrybutton {
+    color: var(--berry);
+    border: solid 3px var(--egg);
+}
+
+#berrybutton:hover {
+    background-color: var(--egg);
+}
+
 #plum {
     color: var(--plum);
 }
@@ -334,6 +365,103 @@ img {
 #plumbg {
     background-color: var(--plum);
 }
+
+span {
+    color:var(--orange);
+}
+
+a:hover {
+    color: #499BBF;
+    transition-duration:.2s;
+}
+
+/*  Footer */
+
+footer {
+    background-color: var(--berry);
+    padding: 62px 11% 62px 11%;
+    text-align:center;
+}
+
+footer p {
+    color: var(--egg);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+footer span {
+    color: var(--pink);
+}
+
+.footer-column-1 img {
+    width:50%;
+}
+
+.footer-column-1 {
+    margin-bottom:48px;
+}
+
+.footer-column-2 {
+    margin-bottom:48px;
+}
+
+.footer-column-3 {
+    margin-bottom:48px;
+}
+
+.parent-site {
+    margin-top:30px;
+}
+
+.parent-site a {
+    color: var(--orange);
+}
+
+.parent-site a:hover {
+    color: var(--pink);
+}
+
+.social-media {
+    display:flex;
+    gap:1.25em;
+    justify-content:center;
+    margin-top:2em;
+}
+
+.social-media img {
+    border-radius:0;
+    height:30px;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+    transition-duration:.2s;
+}
+
+footer ul {
+    display:flex;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    margin:10px 0.5em 0 0.5em;
+}
+
+footer a {
+    color:var(--egg);
+    text-decoration:none;
+    font-size:1.1em;
+    transition: opacity 150ms ease-in-out;
+}
+  
+footer a:hover {
+    color:var(--orange);
+}
+
+
 
 /* WELCOME TO DESKTOP */
 
@@ -430,12 +558,57 @@ img {
         margin-right:11%;
     }
 
+    .grid-item {
+        text-align:left;
+    }
+
     .left-column {
         width:50%;
     }
 
     .right-column {
         width:50%;
+    }
+
+    footer {
+        display:flex;
+        gap: 6em;
+        text-align:left;
+        padding: 80px 11% 30px 11%;
+    }
+
+    footer ul {
+        display:inline;
+    }
+
+    footer li {
+        margin:10px 0 0 0;
+    }
+
+    .footer-column-1 {
+        width:15%;
+        margin-right:2em;
+        align-items:center;
+        text-align:center;
+    }
+
+    .footer-column-1 img {
+        width:100%;
+        margin-bottom:1em;
+        margin-top: -1.75em;
+    }
+
+    .footer-column-1 p {
+        margin-bottom: 0;
+    }
+
+    .parent-site {
+        margin-top:70px;
+    }
+
+    .social-media {
+        justify-content:left;
+        margin-top:55px;
     }
 
 }
