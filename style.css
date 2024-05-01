@@ -502,6 +502,10 @@ footer a:hover {
     margin-top:2em;
 }
 
+.health-advice h1 {
+    margin-top:-0.5em;
+}
+
 .team-member {
     margin-bottom:72px;
     text-align:center;
@@ -544,15 +548,15 @@ footer a:hover {
 }
 
 .philly-banner {
-    background-image: url(images/philadelphia-banner.jpg);
+    background-image: url(images/philadelphia-banner-phone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom:120px;
+    height: 1000px;
 }
 
 .philly-resources {
     padding: 6em 0 6em 15%;
-    width:55%;
 }
 
 
@@ -561,12 +565,64 @@ footer a:hover {
 }
 
 .resource-rows p {
-    margin-bottom: 72px;
+    margin-bottom: 50px;
+}
+
+.resource-rows .narrow-content {
+    margin-bottom: 4em;
+}
+
+.resource-rows img {
+    margin-bottom:2em;
+}
+
+.resource-rows button {
+    margin-bottom:2em;
+}
+
+.card-image {
+    margin-bottom: 1em;
 }
 
 #gap {
     gap:2em;
 }
+
+/*  Contact */
+
+.contact-form {
+    padding: 2% 10% 2% 10%;
+    margin-top:1em;
+    margin-bottom:2em;
+}
+
+.contact-description button {
+    margin-top:2em;
+    margin-right:1em;
+}
+
+.contact-bullets {
+    margin-top:6em;
+}
+
+.contact-bullets p {
+    color: var(--berry);
+}
+
+.form-buttons {
+    margin-bottom:4em;
+}
+
+.form-buttons button {
+    margin-bottom:1em;
+    margin-right:1em;
+}
+
+.form-fields input {
+    display:block;
+    margin-bottom:4em;
+}
+
 
 
 /* WELCOME TO DESKTOP */
@@ -746,6 +802,28 @@ footer a:hover {
     .team-member {
         margin-bottom:108px;
         text-align:left;
+    }
+
+    .philly-resources {
+        width:55%;
+    }
+
+    .philly-banner {
+        background-image: url(images/philadelphia-banner.jpg);
+        height: 550px;
+    }
+
+    .contact-form {
+        display:flex;
+        gap:6em;
+    }
+
+    .contact-description {
+        width:40%;
+    }
+
+    .contact-bullets .bullet-text {
+        width: 70%;
     }
 
 }
