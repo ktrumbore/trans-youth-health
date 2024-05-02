@@ -53,21 +53,22 @@
 
         <div class="contact-bullets">
           <div class="bullet-text">
-            <img src="images/bullet-fluff.svg" alt="Bullet point.">
+            <img src="images/bullet-mail.png" alt="Bullet point.">
             <b><p>contact@mazzonicenter.org</p></b>
           </div>
 
           <div class="bullet-text">
-            <img src="images/bullet-fluff.svg" alt="Bullet point.">
+            <img src="images/bullet-phone.png" alt="Bullet point.">
             <b><p>(215) 563-0652</p></b>
           </div>
 
           <div class="bullet-text">
-            <img src="images/bullet-fluff.svg" alt="Bullet point.">
-            <b><p>1348 Bainbridge Street Philadelphia, PA 19147</p></b>
+            <img src="images/bullet-location.png" alt="Bullet point.">
+            <b><p id="address">1348 Bainbridge Street Philadelphia, PA 19147</p></b>
           </div>
 
         </div>
+
 
       </div>
 
@@ -75,25 +76,54 @@
         <h2>I want to talk about...</h2>
 
         <div class="form-buttons">
-          <button>peer support</button>
-          <button>gender-affirming procedures</button>
-          <button>hrt</button>
-          <button>dysphoria</button>
-          <button>health coverage</button>
-          <button>other</button>
+          <div class="ck-button">
+            <label>
+               <input type="checkbox" value="1"><span>peer support</span>
+            </label>
+         </div>
+         
+         <div class="ck-button">
+            <label>
+               <input type="checkbox" value="2"><span>gender-affirming procedures</span>
+            </label>
+         </div>
+         
+         <div class="ck-button">
+            <label>
+               <input type="checkbox" value="3"><span>hrt</span>
+            </label>
+         </div>
+         
+         <div class="ck-button">
+            <label>
+               <input type="checkbox" value="4"><span>dysphoria</span>
+            </label>
+         </div>
+         
+         <div class="ck-button">
+            <label>
+               <input type="checkbox" value="5"><span>health coverage</span>
+            </label>
+         </div>
+         
+         <div class="ck-button">
+            <label>
+               <input type="checkbox" value="6"><span>other</span>
+            </label>
+         </div>
         </div>
 
         <div class="form-fields">
           <label for="name">
-            <input type="text" id="lname" placeholder="Your name">
+            <input type="text" id="name" placeholder="Your name">
           </label>
   
           <label for="email">
-            <input type="email" id="lname" placeholder="Your email">
+            <input type="email" id="email" placeholder="Your email">
           </label>
   
-          <label for="name">
-            <input type="text" id="lname" placeholder="Your message">
+          <label for="message">
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea>
           </label>
         </div>
 
@@ -142,5 +172,7 @@
           </div>
         </div>
       </footer>
+
+      <script src="script.js"></script>
 
 </body>

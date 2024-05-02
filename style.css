@@ -580,7 +580,7 @@ footer a:hover {
     margin-bottom:2em;
 }
 
-.card-image {
+.resource-rows .card-image {
     margin-bottom: 1em;
 }
 
@@ -588,12 +588,14 @@ footer a:hover {
     gap:2em;
 }
 
+
+
 /*  Contact */
 
 .contact-form {
     padding: 2% 10% 2% 10%;
     margin-top:1em;
-    margin-bottom:2em;
+    margin-bottom:4em;
 }
 
 .contact-description button {
@@ -602,25 +604,100 @@ footer a:hover {
 }
 
 .contact-bullets {
-    margin-top:6em;
+    margin-top:5em;
 }
 
-.contact-bullets p {
+.contact-bullets img {
+    max-width:30px;
+}
+
+.contact-bullets .bullet-text p {
     color: var(--berry);
+    padding-top:1.5em;
+}
+
+#address {
+    padding-top:1em;
 }
 
 .form-buttons {
-    margin-bottom:4em;
+    margin-top:2em;
 }
 
-.form-buttons button {
-    margin-bottom:1em;
-    margin-right:1em;
+.ck-button {
+    padding: 10px 26px;
+    overflow:auto;
+    float:left;
+    border-radius: 15px;
+    background: var(--orange);
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 800;
+    letter-spacing:0.5px;
+    font-size:14px;
+    cursor: pointer;
+    margin: 1em 2em 1em 0;
+    border: none;
 }
 
-.form-fields input {
+.ck-button label {
+    float:left;
+}
+
+.ck-button label span {
+    text-align:center;
+    display:block;
+    color: var(--egg);
+}
+
+.ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+.ck-button:hover {
+    background:var(--wave);
+}
+
+input {
+    display:block;
+    margin-bottom:3.25em;
+    padding:1em;
+    padding-left:0;
+    font-size: 18px;
+    width:100%;
+    border: 0;
+    border-bottom: 3px var(--orange) solid;
+    background: transparent;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+textarea {
     display:block;
     margin-bottom:4em;
+    padding:1em;
+    padding-left:0;
+    font-size: 18px;
+    width:100%;
+    border: 0;
+    border-bottom: 3px var(--orange) solid;
+    background: transparent;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Source Sans 3', sans-serif;
+    color:var(--wave); 
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+input:focus {
+    border-bottom: 3px var(--berry) solid;
+}
+
+textarea:focus {
+    border-bottom: 3px var(--berry) solid;
 }
 
 
@@ -819,11 +896,11 @@ footer a:hover {
     }
 
     .contact-description {
-        width:40%;
+        width:50%;
     }
 
     .contact-bullets .bullet-text {
-        width: 70%;
+        width: 65%;
     }
 
 }
