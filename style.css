@@ -496,6 +496,7 @@ footer a:hover {
 
 .about-container {
     padding: 2% 10% 2% 10%;
+    margin-top:3em;
 }
 
 .health-advice {
@@ -594,7 +595,7 @@ footer a:hover {
 
 .contact-form {
     padding: 2% 10% 2% 10%;
-    margin-top:1em;
+    margin-top:3em;
     margin-bottom:4em;
 }
 
@@ -604,7 +605,7 @@ footer a:hover {
 }
 
 .contact-bullets {
-    margin-top:5em;
+    margin-top:3em;
 }
 
 .contact-bullets img {
@@ -613,49 +614,56 @@ footer a:hover {
 
 .contact-bullets .bullet-text p {
     color: var(--berry);
-    padding-top:1.5em;
+    padding-top:3.6em;
 }
 
 #address {
-    padding-top:1em;
+    padding-top:3em;
+}
+
+.form-input {
+    margin-top:4em;
 }
 
 .form-buttons {
     margin-top:2em;
+    margin-bottom:4em;
 }
 
-.ck-button {
-    padding: 10px 26px;
-    overflow:auto;
-    float:left;
-    border-radius: 15px;
-    background: var(--orange);
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 800;
-    letter-spacing:0.5px;
-    font-size:14px;
-    cursor: pointer;
-    margin: 1em 2em 1em 0;
-    border: none;
+.form-buttons button {
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-.ck-button label {
-    float:left;
+button.buttonberry {
+    background:var(--berry);
+    color:var(--egg);
+    border: solid var(--berry) 3px;
 }
 
-.ck-button label span {
-    text-align:center;
-    display:block;
-    color: var(--egg);
+button.buttonpink {
+    background:var(--pink);
+    color:var(--plum);
+    border: solid var(--pink) 3px;
 }
 
-.ck-button label input {
-    position:absolute;
-    top:-20px;
-}
-
-.ck-button:hover {
+button.buttonwave {
     background:var(--wave);
+    color:var(--egg);
+    border: solid var(--wave) 3px;
+}
+
+button.buttonplum {
+    background:var(--plum);
+    color:var(--egg);
+    border: solid var(--plum) 3px;
+}
+
+.form-buttons button:hover {
+    background: #499BBF;
+    border: solid #499BBF 3px;
+    color:var(--egg);
+    transition-duration:.2s;
 }
 
 input {
@@ -896,11 +904,31 @@ textarea:focus {
     }
 
     .contact-description {
-        width:50%;
+        width:55%;
+    }
+
+    .contact-bullets {
+        margin-top:5em;
     }
 
     .contact-bullets .bullet-text {
         width: 65%;
     }
+
+    .contact-bullets .bullet-text p {
+        padding-top:1.5em;
+    }    
+
+    .contact-form {
+        margin-top:1em;
+    }
+
+    #address {
+        padding-top:1em;
+    }
+    
+    .form-input {
+        margin-top: 0em;
+    }    
 
 }

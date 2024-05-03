@@ -1,28 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var checkbox = document.querySelector('.ck-button input[type="checkbox"]');
-    var ckButton = document.querySelector('.ck-button');
-
-    checkbox.addEventListener('change', function() {
-        if (this.checked) {
-            ckButton.style.background = '#499BBF';
-        } else {
-            ckButton.style.background = 'var(--orange)';
-        }
-    });
-
-    ckButton.addEventListener('mouseenter', function() {
-        if (!checkbox.checked) {
-            this.style.background = 'var(--wave)';
-        }
-    });
-
-    ckButton.addEventListener('mouseleave', function() {
-        if (!checkbox.checked) {
-            this.style.background = 'var(--orange)';
-        }
-    });
-});
-
 const input = document.querySelector('#nav-toggle');
 const nav = document.querySelector('nav ul');
 const anchors = document.querySelectorAll ('a');
@@ -45,3 +20,26 @@ window.onscroll = function (){
         checkAll();
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll('.form-buttons button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            if (this.classList.contains('clicked')) {
+                this.classList.remove('clicked');
+                this.style.color = ''; // Reset to default text color
+            } else {
+                // Remove 'clicked' class from all buttons
+                buttons.forEach(btn => btn.classList.remove('clicked'));
+
+                // Apply 'clicked' class to the clicked button
+                this.classList.add('clicked');
+                this.style.color = 'var(--egg)'; 
+            }
+
+            // Toggle background color and border color
+            this.style.backgroundColor = this.classList.contains('clicked') ? '#499BBF' : '';
+            this.style.borderColor = this.classList.contains('clicked') ? '#499BBF' : '';
+        });
+    });
+});
