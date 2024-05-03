@@ -325,6 +325,10 @@ img {
     margin-bottom:56px;
 }
 
+.stat-card img {
+    margin-bottom:2em;
+}
+
 .stat-card h1 {
     color:var(--orange);
     margin-bottom:12px;
